@@ -24,19 +24,21 @@
                   lite: '#707070',
                   colorPrimary: '#B68C5A',
                },
-               fontFamily: {
-                  'fonts-body': ['EB Garamond', 'serif'],
-               },
             }
          }
       }
    </script>
+   <style>
+      .fonts-body{
+         font-family: 'EB Garamond', serif;
+      }
+   </style>
 </head>
 
 <body class="fonts-body">
    <header class="max-w-7xl mx-auto">
       <!-- navbar style -->
-      <div class="navbar bg-base-100">
+      <div class="navbar lg:pt-6 bg-base-100">
          <div class="navbar-start">
             <div class="dropdown">
                <label tabindex="0" class="btn btn-ghost md:hidden">
@@ -51,7 +53,6 @@
                   <li><a class="text-lite">Contact Us</a></li>
                </ul>
             </div>
-            <!-- <a class="btn btn-ghost normal-case text-xl"></a> -->
             <a href="#index.html"><img src="./images/logo2.png" class="w-11/12 sm:w-auto"></a>
          </div>
          <div class="navbar-center hidden md:flex">
@@ -67,7 +68,17 @@
             <a class="btn normal-case bg-colorPrimary text-xs sm:text-base font-semibold text-white">Free Consultation</a>
          </div>
       </div>
-
+      <!-- banner style -->
+      <div class="hero rounded-lg lg:mt-16 sm:h-[calc(100vh-68px)] lg:h-[calc(100vh-148px)]" style="background-image: url(./images/banner.png);">
+         <div class="hero-content text-center text-neutral-content">
+           <div class="max-w-2xl">
+             <h1 class="mb-5 text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">We Provide Effective Legal Solutions</h1>
+             <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+             <input type="search" name="search" placeholder="search your services" class="p-2 md:p-5 w-10/12 sm:w-6/12 sm:mr-3 lg:w-[500px] rounded-lg placeholder:text-[#A0A0A0] placeholder:font-[Poppins] text-black">
+             <button class="rounded-lg bg-colorPrimary font-[Poppins] text-white text-sm md:text-xl font-normal md:font-semibold normal-case border-0 py-2 mt-3 md:py-4 px-10">Search</button>
+           </div>
+         </div>
+       </div>
    </header>
    <main class="max-w-7xl mx-auto">
 
